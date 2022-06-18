@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Web Based Application for Pregnant mothers</title>
+</head>
+</head>
+
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<style>
+  body{
+    background-image: linear-gradient(187deg, rgba(236, 236, 236, 0.07) 0%, rgba(236, 236, 236, 0.07) 50%,rgba(160, 160, 160, 0.07) 50%, rgba(160, 160, 160, 0.07) 100%),linear-gradient(255deg, rgba(79, 79, 79, 0.09) 0%, rgba(79, 79, 79, 0.09) 50%,rgba(134, 134, 134, 0.09) 50%, rgba(134, 134, 134, 0.09) 100%),linear-gradient(191deg, rgba(80, 80, 80, 0.08) 0%, rgba(80, 80, 80, 0.08) 50%,rgba(132, 132, 132, 0.08) 50%, rgba(132, 132, 132, 0.08) 100%),linear-gradient(339deg, rgba(210, 210, 210, 0.04) 0%, rgba(210, 210, 210, 0.04) 50%,rgba(36, 36, 36, 0.04) 50%, rgba(36, 36, 36, 0.04) 100%),linear-gradient(173deg, rgba(68, 68, 68, 0.09) 0%, rgba(68, 68, 68, 0.09) 50%,rgba(57, 57, 57, 0.09) 50%, rgba(57, 57, 57, 0.09) 100%),linear-gradient(317deg, rgba(10, 10, 10, 0.01) 0%, rgba(10, 10, 10, 0.01) 50%,rgba(17, 17, 17, 0.01) 50%, rgba(17, 17, 17, 0.01) 100%),linear-gradient(173deg, rgba(25, 25, 25, 0.07) 0%, rgba(25, 25, 25, 0.07) 50%,rgba(127, 127, 127, 0.07) 50%, rgba(127, 127, 127, 0.07) 100%),linear-gradient(222deg, rgba(199, 199, 199, 0.05) 0%, rgba(199, 199, 199, 0.05) 50%,rgba(59, 59, 59, 0.05) 50%, rgba(59, 59, 59, 0.05) 100%),linear-gradient(232deg, rgba(161, 161, 161, 0.01) 0%, rgba(161, 161, 161, 0.01) 50%,rgba(28, 28, 28, 0.01) 50%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(90deg, rgb(0,2,29),rgb(4,150,89),rgb(0,0,0));
+	box-shadow:0 05px 10px #000000;
+	color: #CFA9AA;
+ 
+ 
+}
+
+#wrapper{font-family:tahoma; }
+.full-page
+{
+	height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    
+}
+
+
+
+/*logo styling */
+
+#logo
+{
+	width:250px;
+	margin-top:10px;
+}
+
+#ist {
+    color:#b9c0c5;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 15px;
+}
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+	height: 40px;
+  background-image: linear-gradient(75deg, rgba(155, 155, 155, 0.31) 0%, rgba(155, 155, 155, 0.31) 12.5%,rgba(134, 134, 134, 0.31) 12.5%, rgba(134, 134, 134, 0.31) 25%,rgba(113, 113, 113, 0.31) 25%, rgba(113, 113, 113, 0.31) 37.5%,rgba(92, 92, 92, 0.31) 37.5%, rgba(92, 92, 92, 0.31) 50%,rgba(70, 70, 70, 0.31) 50%, rgba(70, 70, 70, 0.31) 62.5%,rgba(49, 49, 49, 0.31) 62.5%, rgba(49, 49, 49, 0.31) 75%,rgba(28, 28, 28, 0.31) 75%, rgba(28, 28, 28, 0.31) 87.5%,rgba(7, 7, 7, 0.31) 87.5%, rgba(7, 7, 7, 0.31) 100%),linear-gradient(55deg, rgb(16, 16, 16) 0%, rgb(16, 16, 16) 12.5%,rgb(25, 25, 25) 12.5%, rgb(25, 25, 25) 25%,rgb(35, 35, 35) 25%, rgb(35, 35, 35) 37.5%,rgb(44, 44, 44) 37.5%, rgb(44, 44, 44) 50%,rgb(53, 53, 53) 50%, rgb(53, 53, 53) 62.5%,rgb(62, 62, 62) 62.5%, rgb(62, 62, 62) 75%,rgb(72, 72, 72) 75%, rgb(72, 72, 72) 87.5%,rgb(81, 81, 81) 87.5%, rgb(81, 81, 81) 100%);
+	float:left;
+	box-shadow:10px 14px 50px 2px #0c0c0c;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color:rgb(15, 1, 1);
+	transition:all .7s  ease;
+	text-decoration: none;
+  }
+  
+  
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+  }
+  
+  
+
+/**********************/
+
+/*=========categories======*/
+#headingblock
+{
+	width:100%;
+	height:auto;
+	float:left;
+	color:#000608;
+	font-size: 22px;
+	font-weight:bold;
+}
+
+#headingblock h2
+{
+	line-height:35px;
+	border-left:20px solid #b9c0c5;
+	padding-left:10px;
+}
+
+.text-center{
+	font-size: 20px;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+.prod-box{
+	width:350px;
+	height:300px;
+	overflow:hidden;
+	margin-left: 30px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	
+	position:relative;
+	float:left;
+	
+}
+
+.prod-box>img{
+	max-width: 100%;
+}
+
+.prod-trans{
+	background:rgba(0,0,0,0.6);
+	width: 350px;
+	height: 300px;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	position:absolute;
+	opacity:0;
+	transition:all .5s ease;
+}
+
+.prod-box:hover .prod-trans
+{
+	opacity:1;
+	
+}
+
+.prod-feature{
+	text-align:center;
+	margin-top: -150px;
+	transition:all .5s ease;
+	}
+.prod-feature p{
+	color:#4AFF01;
+	font-family:verdana;
+	
+}
+
+.prod-box:hover .prod-feature{
+	margin-top:150px;
+	transition: all .5s ease;
+
+}
+
+.prod-feature input{
+	width: 150px;
+	height:35px;
+	font-size:17px;
+	
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+.footer-distributed {
+  background-image: linear-gradient(187deg, rgba(236, 236, 236, 0.07) 0%, rgba(236, 236, 236, 0.07) 50%,rgba(160, 160, 160, 0.07) 50%, rgba(160, 160, 160, 0.07) 100%),linear-gradient(255deg, rgba(79, 79, 79, 0.09) 0%, rgba(79, 79, 79, 0.09) 50%,rgba(134, 134, 134, 0.09) 50%, rgba(134, 134, 134, 0.09) 100%),linear-gradient(191deg, rgba(80, 80, 80, 0.08) 0%, rgba(80, 80, 80, 0.08) 50%,rgba(132, 132, 132, 0.08) 50%, rgba(132, 132, 132, 0.08) 100%),linear-gradient(339deg, rgba(210, 210, 210, 0.04) 0%, rgba(210, 210, 210, 0.04) 50%,rgba(36, 36, 36, 0.04) 50%, rgba(36, 36, 36, 0.04) 100%),linear-gradient(173deg, rgba(68, 68, 68, 0.09) 0%, rgba(68, 68, 68, 0.09) 50%,rgba(57, 57, 57, 0.09) 50%, rgba(57, 57, 57, 0.09) 100%),linear-gradient(317deg, rgba(10, 10, 10, 0.01) 0%, rgba(10, 10, 10, 0.01) 50%,rgba(17, 17, 17, 0.01) 50%, rgba(17, 17, 17, 0.01) 100%),linear-gradient(173deg, rgba(25, 25, 25, 0.07) 0%, rgba(25, 25, 25, 0.07) 50%,rgba(127, 127, 127, 0.07) 50%, rgba(127, 127, 127, 0.07) 100%),linear-gradient(222deg, rgba(199, 199, 199, 0.05) 0%, rgba(199, 199, 199, 0.05) 50%,rgba(59, 59, 59, 0.05) 50%, rgba(59, 59, 59, 0.05) 100%),linear-gradient(232deg, rgba(161, 161, 161, 0.01) 0%, rgba(161, 161, 161, 0.01) 50%,rgba(28, 28, 28, 0.01) 50%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(90deg, rgb(0,2,29),rgb(4,150,89),rgb(0,0,0));
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}       
+        
+    
+
+
+        
+
+</style>
+<body>
+  
+  <div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
+      <div class="full-page">
+        <!----------===== main  header=====----------->        
+        <div id="main-header">
+          <!---------logo------->
+          <div id="logo" >             
+            <span id="ist">HELLO</span><span id="ist">MUMMY </span>            
+          </div>    
+          <div class="menu-bar">
+
+            <ul>
+                <li><a href="home.php"> Home</a></li>
+              <li><a href="advices.html">Advices</a></li>
+              <li><a href="Bmicalculator.html">BMI Calculator</a></li>
+              <li><a href="#">Quizzes <i class="fas fa-caret-down"></i></a>
+            
+                  <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="mathquiz/mathquiz.html">Mathquiz</a></li>
+                        <li><a href="randomquote.html">Random Quotes</a></li>
+                        <li><a href="babynamegenerator.html">Name Generator</a></li>
+                        <li><a href="Babyproducts.html">Baby products</a></li>
+                        <li><a href="genderquiz/genderquiz.html">Gender Prediction Quiz</a></li>
+                        <li><a href="puzzle/puzzle.html">Puzzle Game</a></li>
+                       
+            
+                        <li>
+                          <a href="#">Gallery <i class="fas fa-caret-right"></i></a>
+                          
+                          <div class="dropdown-menu-1">
+                            <ul>
+                              <li><a href="photogallery/photogallery.html">Photo Gallery</a></li>
+                              <li><a href="musicgallery.html">Music Gallery</a></li>
+                              <li><a href="videos/videogallery.html">Video Gallery</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        
+                    </div>
+                    <li><a href="#">Check Report <i class="fas fa-caret-down"></i></a>
+                      <div class="dropdown-menu">
+                        <ul>
+                    <li><a  href="checkreport.php">Upload Reports</a></li>
+                    <li><a  href="doctors.html">Doctors Profile</a></li>
+                    </ul>
+                  </li>
+                       <li> <a href="forum/forum.php">Q&A forum</a></li>
+                      <li><a href="Articles.html">Read Articles</a></li>
+                  <li><a href="map.html">Find Channelling center</a></li>
+              <li><a href="about.html">About</a></li>
+            <li><a href="chatbot/contactus.html">Contact us</a></li>
+            <li><a href="logout.php" ><i style="color:#81C3D7" class="fas fa-sign-out-alt"></i></a></li>
+                      </ul>
+              
+            </div>
+
+
+
+<div id="heading-block" align="center">
+    <img src="babyproducts/baby1.png" height="100%" width="100%">
+    </div>
+    <div class="item">
+        <div id="headingblock">
+            <h2>Bed Time </h2>	
+          </div>
+    <div class="prod-container">
+<!------=======1st Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/1.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Cot with mattress</p>	
+    </div>
+    </div>
+    </div>
+<!------=======2nd Top===========--->			
+    <div class="prod-box">
+    <img src="babyproducts/2.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Fitted sheets</p>	
+    
+    </div>
+    </div>
+    </div>	
+
+
+<!------=======3rd  Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/3.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Waterproof mattress protector</p>	
+    
+    </div>
+    </div>
+    </div>				
+<!------=======4th Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/4.jpg" width="350px" height="300px">
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Sleepyhead with cover </p>	
+   
+    </div>
+    </div>
+    </div>				
+
+<!------=======5th Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/5.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Swaddles</p>	
+   
+    </div>
+    </div>
+    </div>			
+
+<!------=======6th  Top===========--->		
+    <div class="prod-box">
+    <img src="babyproducts/6.jpeg" width="350px" height="300px">
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Blankets </p>	
+   
+    </div>
+    </div>
+    </div>				
+    
+    <div class="item">
+        <div id="headingblock">
+            <h2>Changing </h2>	
+          </div>
+    <div class="prod-container">
+<!------=======1st Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/7.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Changing mat x 2</p>	
+    </div>
+    </div>
+    </div>
+<!------=======2nd Top===========--->			
+    <div class="prod-box">
+    <img src="babyproducts/8.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Waterproof pads </p>	
+    
+    </div>
+    </div>
+    </div>	
+
+
+<!------=======3rd  Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/9.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Nappy rash cream</p>	
+    
+    </div>
+    </div>
+    </div>				
+<!------=======4th Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/10.png" width="350px" height="300px">
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Water wipes </p>	
+   
+    </div>
+    </div>
+    </div>				
+
+<!------=======5th Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/11.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Nappies</p>	
+   
+    </div>
+    </div>
+    </div>			
+
+<!------=======6th  Top===========--->		
+    <div class="prod-box">
+    <img src="babyproducts/12.jpg" width="350px" height="300px">
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Tissues </p>	
+   
+    </div>
+    </div>
+    </div>		
+    	
+
+    <div class="item">
+        <div id="headingblock">
+            <h2>Bath Time </h2>	
+          </div>
+    <div class="prod-container">
+<!------=======1st Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/13.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Bath tub</p>	
+    </div>
+    </div>
+    </div>
+<!------=======2nd Top===========--->			
+    <div class="prod-box">
+    <img src="babyproducts/Hooded.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Hooded towel </p>	
+    
+    </div>
+    </div>
+    </div>	
+
+
+<!------=======3rd  Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/15.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Baby shampoo and soap </p>	
+    
+    </div>
+    </div>
+    </div>				
+<!------=======4th Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/16.jpg" width="350px" height="300px">
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Baby body cream </p>	
+   
+    </div>
+    </div>
+    </div>				
+
+<!------=======5th Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/17.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Organic olive oil/coconut oil/baby oil for massaging</p>	
+   
+    </div>
+    </div>
+    </div>			
+
+<!------=======6th  Top===========--->		
+    <div class="prod-box">
+    <img src="babyproducts/18.jpg" width="350px" height="300px">
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Vanity kit [nail clippers, soft baby brush, comb etc]  </p>	
+   
+    </div>
+    </div>
+    </div>	
+    <div class="item">
+        <div id="headingblock">
+            <h2>Feeding </h2>	
+          </div>
+    <div class="prod-container">
+<!------=======1st Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/19.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Nursing pillow</p>	
+    </div>
+    </div>
+    </div>
+<!------=======2nd Top===========--->			
+    <div class="prod-box">
+    <img src="babyproducts/20.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Milk Bottle </p>	
+    
+    </div>
+    </div>
+    </div>	
+
+
+<!------=======3rd  Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/21.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Breastfeeding cover </p>	
+    
+    </div>
+    </div>
+    </div>			
+    
+    <div class="item">
+        <div id="headingblock">
+            <h2>Clothes  </h2>	
+          </div>
+    <div class="prod-container">
+<!------=======1st Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/22.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Sleepsuits </p>	
+    </div>
+    </div>
+    </div>
+<!------=======2nd Top===========--->			
+    <div class="prod-box">
+    <img src="babyproducts/23.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Bibs </p>	
+    
+    </div>
+    </div>
+    </div>	
+
+
+<!------=======3rd  Top===========--->	
+    <div class="prod-box">
+    <img src="babyproducts/24.jpg" width="350px" height="300px" >
+    <div class="prod-trans">
+    <div class="prod-feature">
+    <p style="color: beige;font-weight: bold;">Hats</p>	
+    
+    </div>
+    </div>
+    </div>	
+    <!------=======4rd  Top===========--->	
+    <div class="prod-box">
+        <img src="babyproducts/25.jpg" width="350px" height="300px" >
+        <div class="prod-trans">
+        <div class="prod-feature">
+        <p style="color: beige;font-weight: bold;">Baby Socks</p>	
+        
+        </div>
+        </div>
+        </div>
+        <!------=======5rd  Top===========--->	
+    <div class="prod-box">
+        <img src="babyproducts/26.jpg" width="350px" height="300px" >
+        <div class="prod-trans">
+        <div class="prod-feature">
+        <p style="color: beige;font-weight: bold;">Baby Clothes</p>	
+        
+        </div>
+        </div>
+        </div>
+        <!------=======6rd  Top===========--->	
+    <div class="prod-box">
+        <img src="babyproducts/27.jpg" width="350px" height="300px" >
+        <div class="prod-trans">
+        <div class="prod-feature">
+        <p style="color: beige;font-weight: bold;">Coats</p>	
+        
+        </div>
+        </div>
+        </div>	
+        
+        <div class="item">
+            <div id="headingblock">
+                <h2>Room Decorations Ideas </h2>	
+              </div>
+        <div class="prod-container">
+    <!------=======1st Top===========--->	
+        <div class="prod-box">
+        <img src="Babyproducts/room (1).jpeg" width="350px" height="300px" >
+        <div class="prod-trans">
+        <div class="prod-feature">
+     
+        </div>
+        </div>
+        </div>
+    <!------=======2nd Top===========--->			
+        <div class="prod-box">
+        <img src="Babyproducts/room (1).jpg" width="350px" height="300px" >
+        <div class="prod-trans">
+        <div class="prod-feature">
+       	
+        
+        </div>
+        </div>
+        </div>	
+    
+    
+    <!------=======3rd  Top===========--->	
+        <div class="prod-box">
+        <img src="Babyproducts/room (1).webp" width="350px" height="300px" >
+        <div class="prod-trans">
+        <div class="prod-feature">
+       
+        
+        </div>
+        </div>
+        </div>	
+        <!------=======4rd  Top===========--->	
+        <div class="prod-box">
+            <img src="Babyproducts/room (2).jpg" width="350px" height="300px" >
+            <div class="prod-trans">
+            <div class="prod-feature">
+          
+            
+            </div>
+            </div>
+            </div>
+            <!------=======5rd  Top===========--->	
+        <div class="prod-box">
+            <img src="Babyproducts/room (3).jpg" width="350px" height="300px" >
+            <div class="prod-trans">
+            <div class="prod-feature">
+           
+            </div>
+            </div>
+            </div>
+            <!------=======6rd  Top===========--->	
+        <div class="prod-box">
+            <img src="Babyproducts/room (4).jpg" width="350px" height="300px" >
+            <div class="prod-trans">
+            <div class="prod-feature">
+           
+            
+            </div>
+            </div>
+            </div>	
+            <div class="prod-box">
+                <img src="Babyproducts/room (5).jpg" width="350px" height="300px" >
+                <div class="prod-trans">
+                <div class="prod-feature">
+            
+                </div>
+                </div>
+                </div>	
+                <div class="prod-box">
+                    <img src="Babyproducts/room (6).jpg" width="350px" height="300px" >
+                    <div class="prod-trans">
+                    <div class="prod-feature">
+                  
+                    
+                    </div>
+                    </div>
+                    </div>	
+
+                    <div class="prod-box">
+                        <img src="Babyproducts/room (7).jpg" width="350px" height="300px" >
+                        <div class="prod-trans">
+                        <div class="prod-feature">
+        
+                        
+                        </div>
+                        </div>
+                        </div>	
+                        <div class="prod-box">
+                            <img src="Babyproducts/room (8).jpg" width="350px" height="300px" >
+                            <div class="prod-trans">
+                            <div class="prod-feature">
+                           
+                            
+                            </div>
+                            </div>
+                            </div>	
+                            <div class="prod-box">
+                                <img src="Babyproducts/room (9).jpg" width="350px" height="300px" >
+                                <div class="prod-trans">
+                                <div class="prod-feature">
+                            
+                                
+                                </div>
+                                </div>
+                                </div>	
+                                <div class="prod-box">
+                                    <img src="Babyproducts/room (10).jpg" width="350px" height="300px" >
+                                    <div class="prod-trans">
+                                    <div class="prod-feature">
+                                 
+                                    
+                                    </div>
+                                    </div>
+                                    </div>	
+                                    <div class="prod-box">
+                                        <img src="Babyproducts/room (11).jpg" width="350px" height="300px" >
+                                        <div class="prod-trans">
+                                        <div class="prod-feature">
+                                	
+                                        
+                                        </div>
+                                        </div>
+                                        </div>	
+                                                    <div class="prod-box">
+                        <img src="Babyproducts/room (12).jpg" width="350px" height="300px" >
+                        <div class="prod-trans">
+                        <div class="prod-feature">
+                     
+                        
+                        </div>
+                        </div>
+                        </div>	
+                        <div class="prod-box">
+                            <img src="Babyproducts/room (13).jpg" width="350px" height="300px" >
+                            <div class="prod-trans">
+                            <div class="prod-feature">
+                           
+                            </div>
+                            </div>
+                            </div>	
+                            
+                            <div class="prod-box">
+                                <img src="Babyproducts/room (14).jpg" width="350px" height="300px" >
+                                <div class="prod-trans">
+                                <div class="prod-feature">
+                             
+                                
+                                </div>
+                                </div>
+                                </div>	
+                                
+                                <div class="prod-box">
+                                    <img src="Babyproducts/room (15).jpg" width="350px" height="300px" >
+                                    <div class="prod-trans">
+                                    <div class="prod-feature">
+                                   
+                                    
+                                    </div>
+                                    </div>
+                                    </div>	
+                                    <div class="prod-box">
+                                        <img src="Babyproducts/room (2).opdownload" width="350px" height="300px" >
+                                        <div class="prod-trans">
+                                        <div class="prod-feature">
+                                        	
+                                        
+                                        </div>
+                                        </div>
+                                        </div>	
+                                    
+    </div>
+</div>
+</script>
+
+   <!---------footer------->
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+      <br>     <br>
+      <h3>Hello<span>Mummy</span></h3>
+  
+    
+      <p class="footer-links">
+        <a href="home.php">Home</a>
+        |
+        <a href="about.html">About</a>
+        |
+        <a href="contactus.html">Contact</a>
+        |
+        <a href="index.php">Login</a>
+        |
+        <a href="checkreport.php">Check Report</a>
+        |
+        <a href="forum/forum.php">Q&A Forum</a>
+        |
+        <a href="Babyproducts.html">Baby Essentials</a>
+        |
+        <a href="Bmicalculator.html">BMI Calculator</a>
+        |
+        <a href="advices.html">Advices</a>
+        |
+        <a href="Articles.html">Read Articles</a>
+        |
+        <a href="map.html">Find Location</a>
+    </p>
+  
+
+    </div>
+  
+    <div class="footer-center">
+        <div>
+          <br>  <br>   <br>
+          <span>Fun Time</span>
+          <ul>
+            <li><a href="mathquiz/mathquiz.html">Mathquiz</a></li>
+            <li><a href="randomquote.html">Random Quotes</a></li>
+            <li><a href="babynamegenerator.html">Name Generator</a></li>
+            <li><a href="genderquiz/genderquiz.html">Gender Prediction Quiz</a></li>
+            <li><a href="puzzle/puzzle.html">Puzzle Game</a></li>
+            <li><a href="photogallery/photogallery.html">Photo Gallery</a></li>
+            <li><a href="musicgallery.html">Music Gallery</a></li>
+            <li><a href="videos/videogallery.html">Video Gallery</a></li>
+      
+      </ul>
+        </div>
+    </div>
+    <div class="footer-right">
+          <p class="footer-company-about">
+            <br>     <br> 
+            <span>Our Mission</span>
+            <strong>Hello Mummy</strong> is a web based application which support Pregnant women with mentally, physically and provide necessary guidelines to encourage them to deliver a healthy baby.
+        </p>
+        <div>
+          <br>
+          <i class="fa fa-envelope"></i>
+        <p>hellomummyrep2022@gmail.com</p>
+        </div>
+    </div>
+  
+  </footer>
+  </body>
+</html>
+
+

@@ -1,0 +1,754 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title> Web Based Application for Pregnant mothers</title>
+    </head>
+<style>
+  body{
+    background-image: linear-gradient(187deg, rgba(236, 236, 236, 0.07) 0%, rgba(236, 236, 236, 0.07) 50%,rgba(160, 160, 160, 0.07) 50%, rgba(160, 160, 160, 0.07) 100%),linear-gradient(255deg, rgba(79, 79, 79, 0.09) 0%, rgba(79, 79, 79, 0.09) 50%,rgba(134, 134, 134, 0.09) 50%, rgba(134, 134, 134, 0.09) 100%),linear-gradient(191deg, rgba(80, 80, 80, 0.08) 0%, rgba(80, 80, 80, 0.08) 50%,rgba(132, 132, 132, 0.08) 50%, rgba(132, 132, 132, 0.08) 100%),linear-gradient(339deg, rgba(210, 210, 210, 0.04) 0%, rgba(210, 210, 210, 0.04) 50%,rgba(36, 36, 36, 0.04) 50%, rgba(36, 36, 36, 0.04) 100%),linear-gradient(173deg, rgba(68, 68, 68, 0.09) 0%, rgba(68, 68, 68, 0.09) 50%,rgba(57, 57, 57, 0.09) 50%, rgba(57, 57, 57, 0.09) 100%),linear-gradient(317deg, rgba(10, 10, 10, 0.01) 0%, rgba(10, 10, 10, 0.01) 50%,rgba(17, 17, 17, 0.01) 50%, rgba(17, 17, 17, 0.01) 100%),linear-gradient(173deg, rgba(25, 25, 25, 0.07) 0%, rgba(25, 25, 25, 0.07) 50%,rgba(127, 127, 127, 0.07) 50%, rgba(127, 127, 127, 0.07) 100%),linear-gradient(222deg, rgba(199, 199, 199, 0.05) 0%, rgba(199, 199, 199, 0.05) 50%,rgba(59, 59, 59, 0.05) 50%, rgba(59, 59, 59, 0.05) 100%),linear-gradient(232deg, rgba(161, 161, 161, 0.01) 0%, rgba(161, 161, 161, 0.01) 50%,rgba(28, 28, 28, 0.01) 50%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(90deg, rgb(0,2,29),rgb(4,150,89),rgb(0,0,0));
+	
+	
+}
+#wrapper{font-family:tahoma; }
+
+
+
+.container{
+	width:100%;
+	max-width:1280px;  
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+
+
+
+#ist {
+  color:#b9c0c5;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 15px;
+}
+
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+	height: 35px;
+  background-image: linear-gradient(75deg, rgba(155, 155, 155, 0.31) 0%, rgba(155, 155, 155, 0.31) 12.5%,rgba(134, 134, 134, 0.31) 12.5%, rgba(134, 134, 134, 0.31) 25%,rgba(113, 113, 113, 0.31) 25%, rgba(113, 113, 113, 0.31) 37.5%,rgba(92, 92, 92, 0.31) 37.5%, rgba(92, 92, 92, 0.31) 50%,rgba(70, 70, 70, 0.31) 50%, rgba(70, 70, 70, 0.31) 62.5%,rgba(49, 49, 49, 0.31) 62.5%, rgba(49, 49, 49, 0.31) 75%,rgba(28, 28, 28, 0.31) 75%, rgba(28, 28, 28, 0.31) 87.5%,rgba(7, 7, 7, 0.31) 87.5%, rgba(7, 7, 7, 0.31) 100%),linear-gradient(55deg, rgb(16, 16, 16) 0%, rgb(16, 16, 16) 12.5%,rgb(25, 25, 25) 12.5%, rgb(25, 25, 25) 25%,rgb(35, 35, 35) 25%, rgb(35, 35, 35) 37.5%,rgb(44, 44, 44) 37.5%, rgb(44, 44, 44) 50%,rgb(53, 53, 53) 50%, rgb(53, 53, 53) 62.5%,rgb(62, 62, 62) 62.5%, rgb(62, 62, 62) 75%,rgb(72, 72, 72) 75%, rgb(72, 72, 72) 87.5%,rgb(81, 81, 81) 87.5%, rgb(81, 81, 81) 100%);
+	float:left;
+	box-shadow:10px 14px 50px 2px #0c0c0c;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color:rgb(15, 1, 1);
+	transition:all .7s  ease;
+	text-decoration: none;
+  }
+  
+  
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu-1 {
+    display: none;
+  }
+  
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+  }
+table, th, td {
+    width:50%;
+    border: 1px solid black;
+    height: 50px;
+    vertical-align: left;
+    text-align: center;
+
+  }
+tr:hover {background-color: #cac0c0;}
+
+
+.borderBottom {
+    border-bottom: 1px solid #939393;
+    margin-bottom: 20px;
+}
+
+
+
+
+input {
+    font: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/*-------------------- BMI CALC PAGE STYLING ----------------------------------------------------------------------------------*/
+.Bmi_calc{
+    background-image: linear-gradient(to right top, rgba(180, 196, 194, 0.425), rgba(137, 168, 157, 0.7), rgba(160, 143, 182, 0.7));
+    text-align: center;
+}
+
+/*----- browse page styling ------------------------------------------------------------------------------------------------------*/
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #b15454;
+  font-size: 30px;
+
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #b98d8d;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #442f2f;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+.pageHeadingBig {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Nunito',
+        sans-serif;
+}
+
+
+.gridViewContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridViewItem {
+    display: inline-block;
+    margin: 5px 15px;
+    width: 30%;
+    max-width: 215px;
+    min-width: 150px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    overflow: wrap;
+    flex-wrap: wrap;
+
+
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+
+.gridViewItem img {
+    width: 50%;
+    border-radius: 3px;
+    transition: all .4s ease-out;
+}
+
+.gridViewItem img:hover {
+    filter: url(#spring-grass);
+    box-shadow: 0 3px 6px rgba(80, 77, 77, 0.459);
+}
+
+.gridViewInfo {
+    font-weight: 100;
+    text-align: center;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+}
+
+.grid-item{
+        background: rgb(219, 130, 58);
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+          opacity: 0.6;
+}
+.gridViewInfo:hover {
+    cursor: pointer;
+    color: #3a8350;
+}
+
+.gridViewItem a {
+    text-decoration: none;
+}
+
+
+
+
+/*----menstrual page styling -----------------------------------------------------------------------------------------------*/
+
+.menstrual1{
+  
+    padding-left: 5px;
+}
+
+
+.cc{
+  padding: 10px;
+  margin-top: 5px;
+  font-family: 'Overpass';
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #e1e2e4;
+    color: #e0c9c9;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}            
+      
+    
+</style>
+<body>
+  
+    <div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
+        <div class="full-page">
+          <!----------===== main  header=====----------->        
+          <div id="main-header">
+            <!---------logo------->
+            <div id="logo" >             
+              <span id="ist">HELLO</span><span id="ist">MUMMY </span>            
+            </div>    
+            <div class="menu-bar">
+
+              <ul>
+                <li><a href="home.php"> Home</a></li>
+                <li><a href="advices.html">Advices</a></li>
+                <li><a href="Bmicalculator.html">BMI Calculator</a></li>
+                <li><a href="#">Quizzes <i class="fas fa-caret-down"></i></a>
+              
+                    <div class="dropdown-menu">
+                        <ul>
+                          <li><a href="mathquiz/mathquiz.html">Mathquiz</a></li>
+                          <li><a href="randomquote.html">Random Quotes</a></li>
+                          <li><a href="babynamegenerator.html">Name Generator</a></li>
+                          <li><a href="Babyproducts.html">Baby products</a></li>
+                          <li><a href="genderquiz/genderquiz.html">Gender Prediction Quiz</a></li>
+                          <li><a href="puzzle/puzzle.html">Puzzle Game</a></li>
+                         
+              
+                          <li>
+                            <a href="#">Gallery <i class="fas fa-caret-right"></i></a>
+                            
+                            <div class="dropdown-menu-1">
+                              <ul>
+                                <li><a href="photogallery/photogallery.html">Photo Gallery</a></li>
+                                <li><a href="musicgallery.html">Music Gallery</a></li>
+                                <li><a href="videos/videogallery.html">Video Gallery</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          
+                      </div>
+                      <li><a href="#">Check Report <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                          <ul>
+                      <li><a  href="checkreport.php">Upload Reports</a></li>
+                      <li><a  href="doctors.html">Doctors Profile</a></li>
+                      </ul>
+                    </li>
+                         <li> <a href="forum/forum.php">Q&A forum</a></li>
+                        <li><a href="Articles.html">Read Articles</a></li>
+                    <li><a href="map.html">Find Channelling center</a></li>
+                <li><a href="about.html">About</a></li>
+              <li><a href="chatbot/contactus.html">Contact us</a></li>
+              <li><a href="logout.php" ><i style="color:#81C3D7" class="fas fa-sign-out-alt"></i></a></li>
+                        </ul>
+                
+              </div>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+      </div>
+<div class="container cc">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+
+<div class="bmi text-center" >
+
+    <h1>What is Body Mass Index?</h1>
+    <br>
+    Body mass index (BMI) is a value derived from the mass (weight) and height of a person.
+     The BMI is defined as the body mass divided by the square of the body height,
+     and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres.
+</div>
+
+
+<div class="Bmi_calc" >
+    <img src= "img\bmin.gif"  align= "right" >
+    <h1 class="pageHeadingBig"> BMI CALCULATOR </h1>
+    <form onsubmit="return calcBMI();">
+      System:
+      <label>
+        <input type="radio" id="bmi-metric" name="bmi-measure" onchange="measureBMI()" checked/> Metric
+      </label>
+
+      <label>
+        <input type="radio" id="bmi-imperial" name="bmi-measure" onchange="measureBMI()"/> Imperial
+      </label>
+      <br><br>
+
+      Weight:
+      <input id="bmi-weight" type="number" min="1" max="635" required/>
+      <span id="bmi-weight-unit">KG</span>
+      <br><br>
+
+      Height:
+      <input id="bmi-height" type="number" min="54" max="272" required/>
+      <span id="bmi-height-unit">CM</span>
+      <br><br>
+
+      <input type="submit" value="Calculate BMI"/>
+      <div id="bmi-results"></div>
+
+      <br>
+      <br>
+    </form>
+</div>
+
+<br>
+<br>
+
+<div class="Bmi_calc" >
+    <table>
+        <tr>
+            <th>BMI </th>
+            <th>Nutritional Status</th>
+        </tr>
+
+        <tr>
+            <th> Below 18.5 </th>
+            <th> Underweight </th>
+        </tr>
+
+        <tr>
+            <th> 18.5 - 24.9 </th>
+            <th> Normal Weight </th>
+        </tr>
+
+        <tr>
+            <th> 25.0 - 29.9 </th>
+            <th> Pre - Obesity </th>
+        </tr>
+
+        <tr>
+            <th> 30.0 - 34.9 </th>
+            <th> Obesity Class I </th>
+        </tr>
+
+        <tr>
+            <th> 35.0 - 39.9 </th>
+            <th> Obesity Class II </th>
+        </tr>
+
+        <tr>
+            <th> Above 40 </th>
+            <th> Obesity Class III </th>
+        </tr>
+    </table>
+
+    </div>
+</div>
+<script>
+    function measureBMI () {
+  // true = metric, false = imperial
+  let unit = document.getElementById("bmi-metric").checked,
+      weight = document.getElementById("bmi-weight"),
+      weightu = document.getElementById("bmi-weight-unit"),
+      height = document.getElementById("bmi-height"),
+      heightu = document.getElementById("bmi-height-unit");
+
+  if (unit) {
+    weightu.innerHTML = "KG";
+    weight.min = 1;
+    weight.max = 635;
+    heightu.innerHTML = "CM";
+    height.min = 54;
+    height.max = 272;
+  } else {
+    weightu.innerHTML = "LBS";
+    weight.min = 2;
+    weight.max = 1400;
+    heightu.innerHTML = "IN";
+    height.min = 21;
+    height.max = 107;
+  }
+}
+
+function calcBMI () {
+  // (A) Get elements
+  let bmi = null,
+      unit = document.getElementById("bmi-metric").checked, // true = metric, false = imperial
+      weight = parseInt(document.getElementById("bmi-weight").value),
+      height = parseInt(document.getElementById("bmi-height").value),
+      results = document.getElementById("bmi-results");
+
+  // (B) Calculate BMI
+  // Metric BMI = Mass (kg) / Height (m) square
+  if (unit) {
+    height = height / 100;
+    bmi = weight / (height * height);
+  }
+  // Imperial BMI = 703 X Mass (lbs) / Height (in) square
+  else {
+    bmi = 703 * (weight / (height * height));
+  }
+  // Round off
+  bmi = Math.round(bmi * 100) / 100; // Round off 2 decimal places
+
+  // (C) Show Results
+  if (bmi < 18.5) {
+    results.innerHTML = bmi + " - Underweight";
+  } else if (bmi < 25) {
+    results.innerHTML = bmi + " - Normal weight";
+  } else if (bmi < 30) {
+    results.innerHTML = bmi + " - Pre-obesity";
+  } else if (bmi < 35) {
+    results.innerHTML = bmi + " - Obesity class I";
+  } else if (bmi < 40) {
+    results.innerHTML = bmi + " - Obesity class II";
+  } else {
+    results.innerHTML = bmi + " - Obesity class III";
+  }
+  return false;
+}
+</script>
+   <!---------footer------->
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+    <br>     <br>
+    <h3>Hello<span>Mummy</span></h3>
+
+  
+     <p class="footer-links">
+      <a href="home.php">Home</a>
+      |
+      <a href="about.html">About</a>
+      |
+      <a href="contactus.html">Contact</a>
+      |
+      <a href="index.php">Login</a>
+      |
+      <a href="checkreport.php">Check Report</a>
+      |
+      <a href="forum/forum.php">Q&A Forum</a>
+      |
+      <a href="Babyproducts.html">Baby Essentials</a>
+      |
+      <a href="Bmicalculator.html">BMI Calculator</a>
+      |
+      <a href="advices.html">Advices</a>
+      |
+      <a href="Articles.html">Read Articles</a>
+      |
+      <a href="map.html">Find Location</a>
+  </p>
+
+
+  </div>
+
+  <div class="footer-center">
+      <div>
+        <br>  <br>   <br>
+        <span>Fun Time</span>
+        <ul>
+          <li><a href="mathquiz/mathquiz.html">Mathquiz</a></li>
+          <li><a href="randomquote.html">Random Quotes</a></li>
+          <li><a href="babynamegenerator.html">Name Generator</a></li>
+          <li><a href="genderquiz/genderquiz.html">Gender Prediction Quiz</a></li>
+          <li><a href="puzzle/puzzle.html">Puzzle Game</a></li>
+          <li><a href="photogallery/photogallery.html">Photo Gallery</a></li>
+          <li><a href="musicgallery.html">Music Gallery</a></li>
+          <li><a href="videos/videogallery.html">Video Gallery</a></li>
+    
+    </ul>
+      </div>
+  </div>
+  <div class="footer-right">
+        <p class="footer-company-about">
+          <br>     <br> 
+          <span>Our Mission</span>
+          <strong>Hello Mummy</strong> is a web based application which support Pregnant women with mentally, physically and provide necessary guidelines to encourage them to deliver a healthy baby.
+      </p>
+      <div>
+        <br>
+        <i class="fa fa-envelope"></i>
+        <p>hellomummyrep2022@gmail.com</p>
+      </div>
+  </div>
+
+</footer>
+  </body>
+</html>
+
+
